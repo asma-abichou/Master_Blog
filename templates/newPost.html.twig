@@ -1,0 +1,39 @@
+{% block new_post %}
+    <section class="content">
+            <div class="col-md-12">
+                <div class="card card-primary">
+                    <div class="card-header">
+                        <h3 class="card-title">Create New Post</h3>
+
+                        <div class="card-tools">
+                            <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+
+                        <div class="form-group">
+                            <label for="inputDescription">add Post</label>
+                            <textarea id="inputDescription" class="form-control" rows="4"></textarea>
+                        </div>
+                        <div class="row">
+                        <div class="input-group mb-3">
+                          <div class="custom-file">
+                              <input type="file" class="custom-file-input" id="inputGroupFile02" name="file2">
+                              <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Upload your file here</label>
+                        </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 m-1">
+                                <a href="#" class="btn btn-secondary">Cancel</a>
+                                <input type="submit" value="Post" class="btn btn-success float-right">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
