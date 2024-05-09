@@ -12,9 +12,8 @@
         {% include'sideMenu.html.twig' %}
 
         <div class="content-wrapper">
-            <div class="row">
                 <div class="col-12">
-                    <h4>Recent Activity</h4>
+                    <h4>Notifications</h4>
                     <div class="post">
                         <div class="user-block">
                             <img class="img-circle img-bordered-sm" src="{{ asset('dist/img/user1-128x128.jpg') }}" alt="user image">
@@ -73,8 +72,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        {% include 'footer.hmtl.twig' %}
     </div>
-    {% include 'footer.hmtl.twig' %}
 </body>
 {% endblock %}
