@@ -22,7 +22,7 @@ class AccountController extends AbstractController
     }
 
     #[Route('/account_list', name: 'account_list')]
-    public function listAction(int $id): Response
+    public function listAction(): Response
     {
         return $this->render('account_list.html.twig');
 

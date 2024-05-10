@@ -15,4 +15,11 @@ class PostController extends AbstractController
 
     }
 
+    #[Route('/post', name: 'single_post', methods: ["GET"])]
+    public function getPostAction( int $id ): Response
+    {
+        return $this->render('singlePost.html.twig', ['id'=>$id]);
+
+    }
+
 }
